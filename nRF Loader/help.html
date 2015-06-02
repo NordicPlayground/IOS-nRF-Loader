@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style type="text/css">
+            * {
+                font-family: "Helvetica";
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                margin: 10px;
+            }
+			
+			.hidden {
+				display: none;
+			}
+            
+            h2 {
+                margin-top: 10px;
+            }
+            
+            h3 {
+                margin-top: 5px;
+            }
+            
+            p {
+                margin-bottom: 10px;
+            }
+        
+        ol, li {
+            margin-left: 15px;
+        }
+        </style>
+		<script type="text/javascript">
+		function toggleHidden(id)
+		{
+			if (document.getElementById(id).style.display == 'none')
+			{
+				document.getElementById(id).style.display = 'block';				
+			}
+			else
+			{
+				document.getElementById(id).style.display = 'none';
+			}
+		}
+		</script>
+    </head>
+<body>
+<h2>About</a></h2>
+<div id="about">
+    <p><strong>App version:</strong> $VERSION</p>
+    <p>nRF Loader is an app that uploads new firmware to a device running Nordic Semiconductor's DFU service. A number of binary files are embedded in this app which can be written to any device advertising the appropriate service.</p>
+    
+    <p>A .bin file can be opened directly with nRF Loader from other iOS apps, so if you have an application as a .bin file in an email or in Dropbox, you can open it with nRF Loader to upload the application to a target.</p>
+    
+    <p>The source code for this app is available at <a href="https://www.nordicsemi.com">nordicsemi.com</a>, so its functionality can be embedded in a custom app that also supports the primary use case for a device.</p>
+</div>
+
+<h2>Usage</h2>
+<div id="usage">
+    <p>The following steps tell you how to upload an application to a target.</p>
+    <p><ol>
+        <li>Select the app you want to upload, either by selecting the wanted binary from within nRF Loader or by opening a .bin file from an external application, such as an email client, using nRF Loader.</li>
+        <li>Select the target you want to upload the binary to. Only targets advertising the bootloader service will be shown in the list.</li>
+        <li>Press the <strong>Upload</strong> button once the status of your target is Ready.</li>
+        <li>When the upload is finished, the target will be reset to run the new application.</li>
+    </ol></p>
+                    
+</div>
+</body>
+</html>

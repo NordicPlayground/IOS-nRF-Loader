@@ -1,0 +1,18 @@
+{
+    "binaries": [
+                 {
+                    "title": "ble_app_hrs",
+                    "filename": "ble_app_hrs_nrf6310",
+                    "extension": "bin",
+                    "size": 18344,
+                    "kit": "nRF6310",
+                 },
+                 {
+                    "title": "ble_app_rscs",
+                    "filename": "ble_app_rscs_nrf6310",
+                    "extension": "bin",
+                    "size": 17260,
+                    "kit": "nRF6310",
+                 },
+                ],
+}
